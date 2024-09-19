@@ -25,7 +25,6 @@ nav {
 
 .angularflix {
   width: 250px;
-
 }
 
 .button {
@@ -105,13 +104,22 @@ a:hover {
 }
 
 .garcia {
-  position: absolute;
-  transform: translateX(100vh) rotate(270deg);
-  transition: transform 1s ease
+  position: fixed;
+  right: 0;
+  transform: translateX(410px) rotate(270deg);
+  height: 450px;
+  transition: transform 1s ease;
+  z-index: 99;
 } 
 
 .cheguei {
-  transform: translateX(50vh) rotate(270deg);
+  right: 0;
+  transform: translateX(0) rotate(270deg);
+}
+
+.cheguei:hover {
+  animation: vibrate-3 0.5s linear infinite both;
+  filter: drop-shadow(0 2px 10px rgba(229, 9, 20, 0.5));
 }
 
 footer {
@@ -246,3 +254,38 @@ footer {
   }
 }
 
+@keyframes vibrate-3 {
+  0% {
+    transform: rotate(270deg) translate(0);
+  }
+  10% {
+    transform: rotate(270deg) translate(-2px, -2px);
+  }
+  20% {
+    transform: rotate(270deg) translate(2px, -2px);
+  }
+  30% {
+    transform: rotate(270deg) translate(-2px, 2px);
+  }
+  40% {
+    transform: rotate(270deg) translate(2px, 2px);
+  }
+  50% {
+    transform: rotate(270deg) translate(-2px, -2px);
+  }
+  60% {
+    transform: rotate(270deg) translate(2px, -2px);
+  }
+  70% {
+    transform: rotate(270deg) translate(-2px, 2px);
+  }
+  80% {
+    transform: rotate(270deg) translate(-2px, -2px);
+  }
+  90% {
+    transform: rotate(270deg) translate(2px, -2px);
+  }
+  100% {
+    transform: rotate(270deg) translate(0);
+  }
+}
