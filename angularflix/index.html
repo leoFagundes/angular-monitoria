@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="./images/angularflix.svg"
+          alt="angularflix"
+          class="angularflix"
+        />
+        <a
+          target="_blank"
+          href="https://classroom.google.com/c/Njg0OTQ3MDM4NjQw"
+          ><button class="button">Entrar</button>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="overlay">
+        <img src="./images/garcia.png" alt="garcia" class="garcia" />
+        <article>
+          <h1>VEJA AGORA</h1>
+          <p>O melhor minicurso de Angular da sua vida</p>
+          <p>Com os melhores monitores</p>
+        </article>
+        <button id="THEbutton" class="button">Veja mais</button>
+      </div>
+    </main>
+    <footer>Copyright@2024LeozinNenhumDireitoReservado</footer>
+  </body>
+  <script>
+    document.getElementById("THEbutton").addEventListener("click", () => {
+      document.getElementsByClassName("garcia")[0].classList.toggle("cheguei");
+    });
+  </script>
+</html>
