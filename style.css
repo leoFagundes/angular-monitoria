@@ -6,6 +6,7 @@
 body {
   background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*bMgQ8MhbnQexpqHgIgBJPA.png");
   background-position: center center;
+  background-size: contain;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -13,7 +14,6 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: kenburns-top 5s ease-out infinite both;
 }
 
 nav {
@@ -29,6 +29,8 @@ nav {
   border-radius: 8px;
   box-shadow: 0 2px 5px black;
   animation: kenburns-top 5s ease-out infinite both;
+  height: 200px;
+  width: 300px;
 }
 
 li {
@@ -43,19 +45,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-@keyframes kenburns-top {
-  0% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 160%;
-  }
-  50% {
-    transform: scale(1.25) translateY(-15px);
-    transform-origin: top;
-  }
-  100% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 16%;
-  }
 }
