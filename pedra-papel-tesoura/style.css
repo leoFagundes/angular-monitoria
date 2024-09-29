@@ -115,26 +115,27 @@ body {
 .monitor {
   height: 300px;
   width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .monitor1 {
   background-image: url("images/monitor1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .monitor2 {
   background-image: url("images/monitor2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .monitor1-fala {
   background-image: url("images/monitor1-fala.png");
+  scale: 1.3;
 }
 
 .monitor2-fala {
   background-image: url("images/monitor2-fala.png");
+  scale: 1.3;
 }
 
 .monitor-mao-left {
