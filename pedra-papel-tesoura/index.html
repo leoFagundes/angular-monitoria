@@ -4,14 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="pedra">Pedra</button>
-    <button id="papel">Papel</button>
-    <button id="tesoura">Tesoura</button>
+    <div class="overlay">
+      <section class="buttons-content">
+        <button id="pedra">Pedra</button>
+        <button id="papel">Papel</button>
+        <button id="tesoura">Tesoura</button>
+      </section>
 
-    <p id="resultado"></p>
-    <p id="status"></p>
+      <main class="board-content">
+        <section class="board">
+          <div class="monitor-mao monitor-mao-left">
+            <div id="monitor1" class="monitor monitor1"></div>
+            <div id="mao-right" class="mao-right mao-pedra-right"></div>
+          </div>
+          <div class="monitor-mao monitor-mao-right">
+            <div id="monitor2" class="monitor monitor2"></div>
+            <div id="mao-left" class="mao-left mao-pedra-left"></div>
+          </div>
+        </section>
+        <p id="resultado">RESULTADO</p>
+      </main>
+
+      <section class="status-content">
+        <p id="status">Vitórias = 0 Derrotas = 0 Empates = 0</p>
+      </section>
+    </div>
   </body>
   <script src="main.js"></script>
 </html>
