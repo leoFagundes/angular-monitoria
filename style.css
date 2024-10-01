@@ -4,9 +4,9 @@
 }
 
 body {
-  background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*bMgQ8MhbnQexpqHgIgBJPA.png");
+  background-image: url("images/bg.png");
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -25,12 +25,17 @@ nav {
   color: #1a1a1a;
   position: absolute;
   background-color: white;
-  padding: 12px;
+  padding: 32px;
   border-radius: 8px;
   box-shadow: 0 2px 5px black;
   animation: kenburns-top 5s ease-out infinite both;
-  height: 200px;
   width: 300px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 li {
@@ -45,4 +50,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.title {
+  width: 300px;
 }
