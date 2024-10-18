@@ -22,7 +22,7 @@ function renderTasks() {
         var checkTaskDiv = document.createElement("div");
         checkTaskDiv.id = "checkTask";
         checkTaskDiv.className = task.status ? "checked" : "unchecked";
-        checkTaskDiv.textContent = task.status ? "✓" : "✗";
+        checkTaskDiv.textContent = task.status ? "✓" : "";
         checkTaskDiv.addEventListener("click", function () {
             task.status = !task.status;
             saveTasksToLocalStorage();
@@ -31,7 +31,7 @@ function renderTasks() {
         // texto
         var text = document.createElement("p");
         text.textContent = task.name;
-        text.classList.add(task.status ? "textChecked" : "textUnchecked");
+        text.className = task.status ? "textChecked" : "textUnchecked";
         // div de exclusão
         var deleteTaskDiv = document.createElement("div");
         deleteTaskDiv.id = "deleteTask";

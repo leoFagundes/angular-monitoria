@@ -1,19 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100%;
+
+  gap: 12px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#tasks-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
 #tasks-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   list-style: none;
+  border: 1px solid white;
+  flex: 1;
+  padding: 0 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #tasks-container li #deleteTask:hover {
   cursor: pointer;
 }
 
+#deleteTask {
+  transition: all 0.3s ease;
+}
+
+#deleteTask:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#checkTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid white;
+  height: 8px;
+  width: 8px;
+}
+
+#checkTask:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
 .checked {
   background-color: green;
 }
 
-.unchecked {
-  background-color: red;
-}
-
 .textChecked {
   text-decoration: line-through;
+}
+
+#newtask-input {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#newtask-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+#newtask-input:focus {
+  outline: none;
 }

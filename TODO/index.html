@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="text" id="newtask-input" />
-    <button onclick="addNewTask()" id="newtask-button">Clique aqui</button>
+    <h1>Lista de Tarefas</h1>
+    <div>
+      <input type="text" id="newtask-input" placeholder="Escreva sua tarefa" />
+      <button onclick="addNewTask()" id="newtask-button">
+        Adicionar Tarefa
+      </button>
+    </div>
     <ul id="tasks-container"></ul>
   </body>
   <script src="main.js"></script>
