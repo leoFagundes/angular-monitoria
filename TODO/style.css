@@ -1,0 +1,19 @@
+#tasks-container li {
+  list-style: none;
+}
+
+#tasks-container li #deleteTask:hover {
+  cursor: pointer;
+}
+
+.checked {
+  background-color: green;
+}
+
+.unchecked {
+  background-color: red;
+}
+
+.textChecked {
+  text-decoration: line-through;
+}
