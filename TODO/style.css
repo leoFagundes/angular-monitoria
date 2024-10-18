@@ -86,6 +86,10 @@ body {
   background-color: white;
 }
 
+#newtask-button:hover {
+  cursor: pointer;
+}
+
 #newtask-input:focus {
   outline: none;
 }
